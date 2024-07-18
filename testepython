@@ -1,0 +1,105 @@
+# nome = input("digite seu nome: ")
+# idade = int(input("digite sua idade: "))
+# altura = float(input("digite sua altura: "))
+# print("Meu nome é:", nome, "Minha idade é:", idade, "Minha altura é:", altura)
+
+# altura = float(input("digite sua altura: "))
+# peso = float(input("digite seu peso: "))
+# imc = peso/(altura*altura)
+# while True:
+#     numero1 = int(input("digite o primeiro numero: "))
+#     numero2 = int(input("digite o segundo numero: "))
+#     if numero1 > numero2:
+#         print(numero1)
+#     elif numero2 > numero1:
+#         print(numero2)
+# #     break
+
+# while True:
+#     numero = int(input("digite um numero: "))
+#     if numero % 2 == 0:
+#         print(" esse número é par. ")
+#     else:
+#         print(" esse número é impar. ")
+#     resposta = input("digite 'sair' para finalizar: ")
+
+# numero = 0
+# numero = int(input("digite um número: "))
+# while numero >= 0:
+#     print(numero)
+#     numero -= 1
+# print("fim de contagem!")
+
+# numero = 0
+# while numero < 25:
+#     print(numero, 'ola mundo!')
+#     numero += 1
+# print("final")
+
+# #A frase "numeros" é uma variavel que recebe os valores da lista [2, 4, 6, 8, 10, 12]
+# #"insert" é uma funcao do python que serve para inserir dados à variavel "numeros".
+# numeros = [2, 4, 6, 8, 10, 12]
+# print("Tamanho da lista", len(numeros))
+# print("Tamanho da lista", (numeros))
+# numeros.insert(3, 3)
+# print(numeros)
+
+# import random
+# numeros = []
+# i = 0
+# while i != 4:
+#     numeros.append(random.randint(1, 40))
+#     print(i)
+#     print("Lista final: ", numeros)
+#     i += 1
+
+# for i in range(len(numeros)):
+#     if numeros[i] % 2 == 0:
+#         numeros[i] = "par"
+
+# print("\nLista final: ", numeros)
+
+# print("\nExercicio 2:")
+# lista = [5, 8, 11, 3, 7]
+# for indice, numero in enumerate(lista):
+#     print(f"Na posicao {indice + 1} da lista, está o número {numero}")
+
+
+# class Animal:
+#     def __init__(self, raca, sexo, especie):
+#         self.raca = raca
+#         self.sexo = sexo
+#         self.especie = especie
+
+#     def mia(self):
+#         print(f"Miaaaau!:")
+
+#     def rugir(self):
+#         print(f"Oooooooooo!!!: ")
+
+# ani1 = Animal("Leao: ", "M: ", "Selvagem: ")
+# ani2 = Animal("Gato: ", "F: ", "Domestico: ")
+# print(ani1.especie, ani1.raca)
+
+# ani1.rugir()
+# ani2.mia()
+
+class Aluno:
+    def __init__(self, nome, curso, matricula,):
+        self.nome = nome
+        self.curso = curso
+        self.matricula = matricula
+
+    def turno(self):
+        print("O turno do aluno é: Manhã: ")
+
+    def disciplina(self):
+        print("Educação_física")
+
+
+aluno1 = Aluno("Paulo_Sergio: ", "Ensino_Medio: ", 12345)
+aluno2 = Aluno("Ana_Flavia: ", "Ensino_superior: ", 678910)
+print(f"O nome do aluno é: ", aluno1.nome, "O curso do aluno é: ", aluno1.curso,
+      "A matricula do aluno é: ", aluno1.matricula, )
+
+aluno1.turno()
